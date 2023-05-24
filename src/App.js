@@ -1,8 +1,8 @@
-import logo from './logo.svg'
+import MainPage from 'pages/Main'
 import './App.css'
 
 function App() {
-	return <div>:)</div>
+	return <MainPage />
 }
 
 export default App
