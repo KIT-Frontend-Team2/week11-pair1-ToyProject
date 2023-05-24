@@ -10,7 +10,7 @@
 
 ### 화면 구상도
 
-![Untitled]()
+![Untitled](https://github.com/KIT-Frontend-Team2/week11-pair1-ToyProject/assets/115636461/a9aefaff-1448-4982-aa80-c10d164351ca)
 
 ### 서비스 역할 분담
 
