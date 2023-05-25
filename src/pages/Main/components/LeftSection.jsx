@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	background-color: white;
-	left: 9%;
+	left: 19%;
 	position: fixed;
 	box-sizing: border-box;
 	border: 1px solid black;
