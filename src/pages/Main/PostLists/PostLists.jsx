@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const PostLists = () => {
-	let array = [1, 2, 3, 4, 5]
+	let array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 	return (
 		<Wrapper>
 			<Container>
@@ -15,7 +15,9 @@ const PostLists = () => {
 export default PostLists
 
 const Container = styled.div`
-	width: 500px;
+	position: relative;
+	left: 22.5%;
+	width: 55%;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
@@ -24,12 +26,14 @@ const Container = styled.div`
 `
 
 const PostList = styled.div`
-	width: inherit;
+	width: 100%;
 	list-style: none;
 	height: 300px;
 	background-color: green;
+	cursor: pointer;
 `
 
 const Wrapper = styled.div`
+	width: 100%;
 	padding-top: 50px;
 `
