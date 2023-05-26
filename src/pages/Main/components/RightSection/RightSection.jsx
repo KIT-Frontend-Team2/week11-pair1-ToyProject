@@ -2,24 +2,27 @@ import styled from 'styled-components'
 
 const RightSection = ({ children }) => {
 	return (
-		<Wrapper>
-			<RelativeContainer>{children}</RelativeContainer>
-		</Wrapper>
+		<S.Wrapper>
+			<S.RelativeContainer>{children}</S.RelativeContainer>
+		</S.Wrapper>
 	)
 }
 
 export default RightSection
 
 const Wrapper = styled.div`
-	width: 19%;
+	width: 23%;
 	height: 100%;
 	background-color: white;
 	position: fixed;
 	z-index: 1;
-	right: 19%;
+	right: 15%;
 	box-sizing: border-box;
-	border: 1px solid black;
 `
 const RelativeContainer = styled.div`
 	position: relative;
 `
+const S = {
+	Wrapper,
+	RelativeContainer,
+}
