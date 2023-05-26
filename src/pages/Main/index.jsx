@@ -1,8 +1,9 @@
-import Layout from 'components/Layout'
+import Layout from 'components/Layout/Layout'
 import LeftSection from './components/LeftSection'
 import MiddleSection from './components/MiddleSection'
-import RightSection from './components/RightSection'
+import RightSection from './components/RightSection/RightSection'
 import PostLists from './PostLists/PostLists'
+import RightInnerBanner from './components/RightSection/Banner'
 
 const MainPage = () => {
 	return (
@@ -11,7 +12,9 @@ const MainPage = () => {
 			<MiddleSection>
 				<PostLists />
 			</MiddleSection>
-			<RightSection>RightSection</RightSection>
+			<RightSection>
+				<RightInnerBanner></RightInnerBanner>
+			</RightSection>
 		</Layout>
 	)
 }
