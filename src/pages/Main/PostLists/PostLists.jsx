@@ -21,6 +21,7 @@ const PostLists = () => {
 	return (
 		<Wrapper>
 			<Container>
+				d
 				{array.map(data => {
 					return (
 						<PostList>
