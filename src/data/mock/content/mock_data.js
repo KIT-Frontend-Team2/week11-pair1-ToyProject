@@ -1,5 +1,6 @@
-import { faker } from '@faker-js/faker'
+// import { faker } from '@faker-js/faker'
 import shortid from 'shortid'
+import faker from 'faker'
 
 export const contentsMockData = number =>
 	Array(number)
