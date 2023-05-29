@@ -4,6 +4,7 @@ const Header = () => {
 	return (
 		<HeaderDiv>
 			<Title>탐색하기</Title>
+
 			<TbSettings size={30}></TbSettings>
 		</HeaderDiv>
 	)
