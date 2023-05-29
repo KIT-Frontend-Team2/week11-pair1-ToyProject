@@ -1,10 +1,11 @@
-import { faker } from '@faker-js/faker'
 import shortid from 'shortid'
+import faker from 'faker'
 
-export const contentsMockData = number =>
+export const postsMockData = number =>
 	Array(number)
 		.fill()
-		.map(() => ({
+		.map((_, i) => ({
+			postNumber: i,
 			// 아이디
 			postId: shortid.generate(),
 			// 제목
@@ -13,14 +14,16 @@ export const contentsMockData = number =>
 			postContent: faker.lorem.paragraph(),
 			// 업데이트 시간
 			postUploadedTime: faker.date.past().toLocaleString(),
-
+			// 내가 올린 포스트 확인
+			myPost: false,
+			// 올린 회원 정보
 			user: {
 				// 회원 아이디
 				postMemberId: shortid.generate(),
 				// 회원 닉네임
 				postNickname: faker.internet.userName(),
 				// 회원 프로필이미지
-				postProfileImage: faker.image.imageUrl(80, 40, true),
+				postProfileImage: faker.image.imageUrl(),
 				// 회원 작성 내용
 				commentContent: faker.lorem.paragraph(),
 			},
@@ -35,10 +38,11 @@ export const contentsMockData = number =>
 						// 내용
 						slideContent: faker.lorem.paragraph(),
 						// 이미지
-						slideImage: faker.image.imageUrl(80, 40, true),
+						slideImage: faker.image.imageUrl(),
 					}
 				}),
 
+			// 올린 댓글들 정보
 			comments: Array(Math.floor(Math.random() * 10) + 1)
 				.fill()
 				.map(() => {
@@ -46,7 +50,9 @@ export const contentsMockData = number =>
 						// 번호
 						commentId: shortid.generate(),
 						// 업데이트 시간
+						commentContent: faker.lorem.paragraph(),
 						commentUpdateTime: faker.date.past().toLocaleString(),
+						myComment: false,
 					}
 				}),
 		}))
