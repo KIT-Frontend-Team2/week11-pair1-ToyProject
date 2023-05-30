@@ -23,6 +23,7 @@ const OnePost = ({ data }) => {
 				</S.PostHeader>
 			</S.PostTitle>
 			<PostSlider data={data.slide} />
+			<p>{data.postNumber}</p>
 			<S.PostContent>{data.postContent}</S.PostContent>
 			<S.PostBottom>
 				<button
