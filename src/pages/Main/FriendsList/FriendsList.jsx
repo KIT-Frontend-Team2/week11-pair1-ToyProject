@@ -8,7 +8,7 @@ const FriendsLists = () => {
 	const array = useSelector(state => state.array)
 	const dispatch = useDispatch()
 	const getRandomNumber = () => {
-		return Math.floor(Math.random() * 12) + 1 // 1에서 12 사이의 랜덤 숫자 생성
+		return Math.floor(Math.random() * 12) + 1
 	}
 	const loadArrayData = () => {
 		const randomLength = getRandomNumber()
