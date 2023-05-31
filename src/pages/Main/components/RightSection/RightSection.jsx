@@ -18,6 +18,7 @@ const Wrapper = styled.div`
 	z-index: 1;
 	right: 15%;
 	box-sizing: border-box;
+	border-left: 1px solid ${({ theme }) => theme.PALETTE.Border.OutLineBorder};
 `
 const RelativeContainer = styled.div`
 	position: relative;
