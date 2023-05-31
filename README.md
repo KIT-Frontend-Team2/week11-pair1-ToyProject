@@ -21,18 +21,6 @@
 5. 이미지 캐루셀 - 이지형
 6. 테마 구현 - 이지형
 
-
-### 05-24
-
-- 기본설정 완료 (이지형)
-    - 프로젝트 생성완료
-    - eslint, prettier 세팅완료
-    
-
-### 05-25
-
-- 페이지 레이아웃 작업, 테마 작업완료
-
 ### 페이지 디자인 추가 (테마구현)
 
 - **레퍼런스 선정하기**
@@ -47,5 +35,11 @@
 
 가운데 Content 부분을 제외한 나머지 부분들은 Fixed로 인해 페이지 스크롤을 하여도 올라가지지 않습니다.
 
+- **이미지 케루셀, 페이지네이션 추가하기**
 
-## 프로젝트 작업
+![image](https://github.com/KIT-Frontend-Team2/week11-pair1-ToyProject/assets/115636461/fdfb3757-3eaa-485b-99ac-c9bdba4c7bbf)
+
+## 프로젝트 작업 결과물
+
+![image](https://github.com/KIT-Frontend-Team2/week11-pair1-ToyProject/assets/115636461/0db95970-613d-4ac2-b5ca-18a803fdb96c)
+
